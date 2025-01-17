@@ -12,6 +12,10 @@ function my_theme_enqueue_assets() {
     wp_enqueue_script('custom-js', get_template_directory_uri().'/assets/js/custom.js', array(), time(), true);
 }
 
+/** including post-types */
+include_once(get_template_directory().'/post-types/'.'Services.php');
 
+/** helper functions */
+add_theme_support('post-thumbnails');
 
 ?>
