@@ -16,7 +16,7 @@ function custom_post_type_services() {
     $labels = array(
     'name' => _x('Services', 'plural'),
     'singular_name' => _x('Services', 'singular'),
-    'menu_name' => _x('Services', 'admin menu'),
+    'menu_name' => _x('Services', 'admin menu'), // shows in admin panel
     'name_admin_bar' => _x('Services', 'admin bar'),
     'add_new' => _x('Add New Service', 'add new'),
     'add_new_item' => __('Add New Service'),

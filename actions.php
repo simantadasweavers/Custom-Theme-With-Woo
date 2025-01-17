@@ -7,4 +7,5 @@ function remove_content_post_type_services() {
 }
 
 
+
 ?>

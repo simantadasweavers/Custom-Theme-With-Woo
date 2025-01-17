@@ -1,6 +1,9 @@
 <?php 
 
 include(get_template_directory()."/actions.php");
+include(get_template_directory()."/woo-helper-functions.php");
+
+
 
 /** enqueue css, js, icons scripts */
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
@@ -20,6 +23,16 @@ include_once(get_template_directory().'/post-types/'.'Services.php');
 
 /** theme support */
 add_theme_support('post-thumbnails');
+
+
+/** SVG support */
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+  }
+add_filter('upload_mimes', 'cc_mime_types');
+
+
 
 
 
