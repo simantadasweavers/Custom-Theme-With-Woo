@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class(); ?> >
 
   <header class="p-3 bg-dark text-white">
     <div class="container">
