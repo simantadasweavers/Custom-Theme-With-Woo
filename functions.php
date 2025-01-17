@@ -1,5 +1,7 @@
 <?php 
 
+include(get_template_directory()."/actions.php");
+
 /** enqueue css, js, icons scripts */
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
 function my_theme_enqueue_assets() {
@@ -15,7 +17,10 @@ function my_theme_enqueue_assets() {
 /** including post-types */
 include_once(get_template_directory().'/post-types/'.'Services.php');
 
-/** helper functions */
+
+/** theme support */
 add_theme_support('post-thumbnails');
+
+
 
 ?>
